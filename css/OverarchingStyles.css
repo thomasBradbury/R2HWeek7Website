@@ -1,168 +1,321 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+    @import url('https://fonts.googleapis.com/css?family=Saira+Condensed');
+    @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+       v2.0 | 20110126
+       License: none (public domain)
+    */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol,
-ul {
-    list-style: none;
-}
-blockquote,
-q {
-    quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-/*this should cause the li items to get rid of their bullets and reset any automated browser margin / padding settings */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
 
-.navBarItems {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-/*This should make the items float left so that they'll line up to make a horizontal list. I put padding just to make them look more presentable . because block items don't play well with others and added a nice background*/
 
-.navBarItems {
-    float: left;
-    margin: 5px 5px;
-    padding: 5px;
-    display: Inline-block;
-    background-color: #d3d3d3;
-    text-align: center;
-    color: black;
-    text-decoration: none;
-}
-.navBarItems li {
-    display: inline-block;
-    position: relative;
-}
-.navBarItems li:hover .subMenu {
-    display: inline;
-}
-.banner {
-    position: fixed;
-    height: 50px;
-    width: 100%;
-    background-color: powderblue;
-}
-#picture {
-    max-width: 100%;
-    height: auto;
-    border: 5px solid #d3d3d3;
-    padding: 5px #000;
-}
+
+
+    /* actual css */
+
+    body{
+      min-height:100%;
+      position: relative;
+      overflow: scroll;
+    }
+
+     html {
+      background: #75FFF3;
+      height:100%;
+      width:100%;
+      box-sizing: border-box;
+    }
+
+    .navBarItems {
+        float: left;
+        margin: 5px 5px;
+        padding: 5px;
+        display: inline-block;
+        background-color: #d3d3d3;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Saira Condensed', sans-serif;
+    }
+
+    .navBarItems li {
+        display: inline-block;
+        position: relative;
+    }
+
+   
+
+      .header {
+      overflow: auto;
+      background: #40B2A9;
+      position: fixed;
+      width: 100%;
+      border-bottom: 3px solid black;
+      z-index: 10;
+    }
+
+    .banner {
+      width: 50%;
+      float: left;
+    }
+
+    .banner p {
+      line-height: 50px;
+      font-size: 22px;
+      padding-left: 2%;
+      font-family: times;
+    }
+
+    .navBarItems {
+      width: 48%;
+      overflow: auto;
+      list-style: none;
+      float: left;
+    }
+
+    .navBarItems li {
+      width: 15%;
+      float: left;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    .myGoLinks{
+      padding-top: 10%;
+      text-align: center;
+    }
+
+    .myGoLinks h1 {
+      text-decoration: none;
+      font-size: 3em;
+
+    }
+
+    .myGoLinks h2 a{
+      width: 100%;
+      float: left;
+      background-color:#EE98FF;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 1px solid black;
+      margin: 20px;
+      margin-left: 0px;
+      font-size: 1.3em;
+      font-family: 'Saira Condensed', sans-serif;
+
+    }
+
+    footer{
+      min-height: 50px;
+      background: #FFCCC9;
+    }
+
+    footer a{
+      
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1rem;   
+       }
+
+    body h3{
+      text-align: center;
+      font-size: 1.25em;
+      text-decoration: none;
+      font-family: 'Raleway', sans-serif;
+
+    }
+
+
+    h1{
+      font-family: 'Saira Condensed', sans-serif;
+    }
+
+    .linkedText {
+      float: left;
+      font-size: 1.5em;
+
+    }
+
+    .r2hText{
+      float: right;
+      font-size: 1.5em;
+    }
+
+    .lI {
+      float:left;
+      margin-left: 10px;
+    }
+
+    .R2H {
+      float: right;
+      margin-right: 10px;
+    }
+
+    .contactMe{
+      padding-top: 120px;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Raleway', sans-serif;
+      font-size: 2em;
+
+    }
+
+    .contactYou{
+      padding-top: 20px;
+      text-align: left;
+      padding-left: 25%;
+      list-style-type: none;
+      font-family: 'Raleway', sans-serif;
+      font-size;
+      }
+
+    .contactYou h2{
+      font-size: 1.5em;
+      padding-bottom: 20px;
+    }
+    
+    .aboutMe {
+      padding-top: 120px;
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.25em;
+    }
+    .aboutMe h1 {
+      font-size: 2em;
+      font-family: 'Saira Condensed', sans-serif;
+    }
+    .aboutR2H {
+      padding-top: 10px;
+      text-align: center;
+      font-size: 2em;
+      font-family: 'Saira Condensed', sans-serif;
+
+    }
+
+    .resumeStart{
+      padding-top: 120px;
+      text-align:center;
+      font-family: 'Saira Condensed', sans-serif;
+      font-size: 2em;
+
+    } 
+    .resumeBody {
+      text-align:center;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.25em;
+
+    }
+    .resumeEnd {
+      text-align:center;
+      font-family: 'Saira Condensed', sans-serif;
+      font-size: 2em;
+
+    }
+    .resumeBody h2{
+      font-size: 2em;
+      font-family: 'Saira Condensed', sans-serif;
+
+    }
+    .resumeBody h3{
+      border: 1px solid black;
+      margin-top: 2.5px;
+      margin-bottom: 2.5px;
+    }
+
+    .firstChallengeBox {
+      padding-top: 10%;
+
+    }
+
+    .picture{
+      height: 25%;
+      width: 25%;
+    }
+
+    .WGWVideo{
+      margin-bottom: 120px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

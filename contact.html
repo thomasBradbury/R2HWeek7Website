@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <link rel="stylesheet" type="text/css" href="../CSS/OverarchingStyles.css">
-      <meta charset="utf-8">
-      <title>Thomas Bradbury's Contact Information</title>
-      <div class="myNavBar">
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="./CSS/OverarchingStyles.css">
+   <header>
+      <div class="header">
+      <div class="banner">
+         <p>Thank you for visiting Thomas Bradbury's Biography Website! Make sure to check out <a href="https://roadtohire.org">Road to Hire</a> to learn more about how you too can make a website!</p>
+      </div>
          <ul class="navBarItems">
-            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./Biography.html">Bio</a></li>
             <li><a href="./Resume.html">Resume</a></li>
             <li><a href="./Gallery.html">Gallery</a></li>
@@ -14,16 +16,19 @@
             <li><a href="./Contact.html">Contact Me</a></li>
          </ul>
       </div>
-   </head>
+   </header>
    <body>
-      <h1>If you would like to contact Thomas Bradbury about potential Opportunities</h1>
+      <div class="contactMe">
+      <h2>If you would like to contact Thomas Bradbury about potential Opportunities</h2>
       <ul>
          <li>Phone: 828-557-2989 </li>
          <li>Email: RutomakBradbury@Gmail.com</li>
       </ul>
-      <h1>If you would prefer he contact you please leave your information below</h1>
+      </div>
+      <div class="contactYou">
+      <h2>If you would prefer he contact you please leave your information below</h2>
       <div class="guestInformation">
-      <form action="/rainbow_attributes.php" method="get" onsubmit="return empty()>
+      <form action="/form_submit.php" method="get" onsubmit="return empty()>
          <ul>
          <li>First Name: <input type="text" name="fname" placeholder="first name">
       </li>
@@ -32,13 +37,17 @@
       <li>Phone Number: <input type="text" name="phoneNumber" placeholder="xxx-xxx-xxxx"></li>
       <li>Company: <Input type="text" name="Company" placeholder="your company"></li>
       <li>Reason for contacting:
-         <textarea placeholder="reason for contacting..." cols="200" rows="10" name="reason" ></textarea>
+         <textarea placeholder="reason for contacting..." cols="150" rows="10" name="reason" ></textarea>
       </li>
       </ul>
       <input type="submit" name="submit" value="Save" />
+      </div>
    </body>
-   <footer>
-      <a href="https://www.linkedin.com/in/thomas-bradbury-552841146/">LinkedIn</a>
-      <a href="https://www.roadtohire.org">The organization that made this all possible</a>
+<footer>
+      <a class="LI" href="https://www.linkedin.com/in/thomas-bradbury-552841146/"><img alt="linkedIn image" src="./img/LinkedIn.jpg" width="50px" height="50px"> </a>
+      <p class="linkedText">My Linked In account</p>
+      <p class="r2hText">The organization that <br>made this all possible.</p>
+      <a class="R2H" href="https://www.roadtohire.org"><img alt="road2hire image" src="./img/RoadtoHire.svg" width="100px" height="50px"></a>
+
    </footer>
 </html>
